@@ -17,7 +17,7 @@ html {
     border: solid white 0.5px;
     margin: 0vw auto 5vw auto;
     padding: 1vw 2vw 2vw 2vw;
-    background-image: url("bg-one.png");
+    background-image: url("images/bg-one.png");
     background-repeat: no-repeat;
     background-size: cover;
   }

@@ -1,0 +1,85 @@
+html {
+    background-color: beige;
+    padding: 4vw;
+    font-family: 'Rubik Iso', cursive;
+    color: white;
+    text-align: center;
+    scroll-behavior: smooth;
+  }
+  
+  .grid-container {
+    display: grid;
+  }
+  
+  .grid-item {
+    position: block;
+    width: 30vw;
+    border: solid white 0.5px;
+    margin: 0vw auto 5vw auto;
+    padding: 1vw 2vw 2vw 2vw;
+    background-image: url("bg-one.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .grid-item:hover {
+    border: solid white 10px;
+    width: 32vw;
+  }
+
+  .header{
+    font-size: 2vw;
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+    line-height: 150%;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color:  #ff4800;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: #eda9a9;
+  }
+
+  h1 {
+    position: relative;
+    z-index: 10;
+    font-size: 3vw;
+  }
+
+  p{
+    line-height: 150%;
+  }
+
+  #me-pic {
+    position: relative;
+    margin:-4vw;
+    width: 20vw;
+    z-index: 1;
+  }
+
+  #me-pic:hover {
+    /* border: solid white 3px; */
+    width: 22vw;
+  }
+
+  @keyframes title-colors {
+    0% {color: #eda9a9;}
+    75% {color: #ff4800;}
+    100% {color: #eda9a9;}
+  }
+
+  #title {
+    font-size:5vw;
+    animation: title-colors;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  

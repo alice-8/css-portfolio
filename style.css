@@ -1,19 +1,30 @@
 html {
-    background-color: beige;
-    padding: 4vw;
+    background-color: rgb(245, 245, 230);
     font-family: 'Rubik Iso', cursive;
     color: white;
     text-align: center;
     scroll-behavior: smooth;
+}
+
+  body {
+    background-size: 40px 40px;
+    border: solid  rgb(245, 245, 230);
+    background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
   }
   
   .grid-container {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #css-projects, #languages {
+    grid-column: span 2;
+    width: 90vw;
   }
   
   .grid-item {
     position: block;
-    width: 30vw;
+    width: 40vw;
     border: solid white 0.5px;
     margin: 0vw auto 5vw auto;
     padding: 1vw 2vw 2vw 2vw;
@@ -24,34 +35,36 @@ html {
 
   .grid-item:hover {
     border: solid white 10px;
-    width: 32vw;
   }
 
-  .header{
-    font-size: 2vw;
+
+  .side-bar{
+    font-size: 3vw;
     text-align: left;
     text-decoration: none;
     list-style-type: none;
-    line-height: 150%;
+    line-height: 5vh;
     position: fixed;
     left: 10px;
     top: 10px;
+    z-index: 1000;
   }
 
   a {
     text-decoration: none;
     color:  #ff4800;
+    font-size: 1.5vw;
   }
 
   a:hover {
     text-decoration: underline;
-    color: #eda9a9;
+    color: black;
   }
 
   h1 {
     position: relative;
     z-index: 10;
-    font-size: 3vw;
+    font-size: 4vw;
   }
 
   p{
@@ -60,14 +73,13 @@ html {
 
   #me-pic {
     position: relative;
-    margin:-4vw;
+    margin:-6vw;
     width: 20vw;
     z-index: 1;
   }
 
   #me-pic:hover {
-    /* border: solid white 3px; */
-    width: 22vw;
+    filter: grayscale(1);  
   }
 
   @keyframes title-colors {
@@ -76,10 +88,91 @@ html {
     100% {color: #eda9a9;}
   }
 
-  #title {
-    font-size:5vw;
+
+  #title-text {
+    font-size: 5.5vw;
     animation: title-colors;
-    animation-duration: 4.6s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
   }
   
+  @keyframes duck-rotate {
+    50% {transform: rotate(180deg)}
+    100% {transform: rotate(360deg)}
+  }
+
+  #title-duck {
+    width: 4.5vw;
+    margin-bottom: -0.5vw;
+    animation: duck-rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+  .left h1{
+    width: 0;
+    animation: slide-left 1s forwards;
+  }
+
+  @keyframes slide-left {
+    from {width: 0%;}
+    to {width: 100%;}
+  }
+
+ 
+  /* responsive design */
+  @media only screen and (max-width: 1200px) {
+    .grid-item{
+      width: 60vw;
+    }
+
+    .grid-item:hover {
+      border: solid white 10px;
+      width: 70vw;
+    }
+
+    .side-bar{
+      font-size: 4vw;
+      text-align: left;
+      text-decoration: none;
+      list-style-type: none;
+      width: 100%;
+      background-image: url("images/bg-one.png");
+      z-index: 100;
+      padding: 2vw;
+      left: 0px;
+      top: 0px;
+      margin-top: 0;
+      border-bottom: solid #ff4800 1vw;
+      /* border: solid black; */
+    }
+
+    li {
+      display: inline-block;
+      /* border: solid black; */
+    }
+  
+    a {
+      text-decoration: none;
+      color:  white;
+      font-size: 3vw;
+    }
+
+    a:hover {
+      color:black;
+    }
+
+    #title-text {
+      margin-top: 16vw;
+    }
+
+    #css-projects, #languages, #photo, #about-me, #contact {
+      grid-column: span 2;
+      width: 90vw;
+    }
+
+    html {
+      overflow-x: none;
+    }
+  }
+

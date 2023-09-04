@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Alice Su's Portfolio</title>
+  <title>Alice Su - Portfolio</title>
   <!-- favicon -->
   <link rel="icon" type="image/x-icon" href="images/duck.webp">
   <!-- font imports -->
@@ -17,31 +17,38 @@
 <body>
   <script src="script.js"></script>
 
-  <ul class='header'>
-    <li><a href="#title">Title</a></li>
+  <ul class='side-bar'>
+    <li><a href="#title-text">Title</a></li>
     <li><a href="#photo">Photo of Me</a></li>
     <li><a href="#about-me">About Me</a></li>
+    <li><a href="#languages">Languages</a></li>
     <li><a href="#css-projects">CSS Projects</a></li>
-    <li><a href="#see-my">See My</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 
+  <h1 id="title-text">ALICE SU PORTFOLIO   <img id="title-duck" src="images/duck.webp"></h1>
   <div class='grid-container'>
-    <h1 id="title">ALICE SU PORTFOLIO</h1>
-    <div class='grid-item' id="photo">
+  
+    <div class='grid-item box-one' id="photo">
       <h1>Alice Su</h1>
-      <img id="me-pic" src="images/me.jpg" alt="picture of me">
-      <h1>Portfolio</h1>
+      <img id="me-pic" src="images/me.jpg" alt="photo of me">
+      <div class="left"><h1>Portfolio</h1></div>
     </div>
     <div class='grid-item' id="about-me">
       <h1>About Me</h1>
-      <p>Class: AVHS 26'<br>Sports: Crosscountry, basketball<br>Hobbies: CSS, Mathing, listening to music</p>
+      <p>Class: AVHS 26'<br>Sports: Crosscountry, basketball<br>Hobbies: CSS, math, listening to music</p>
+    </div>
+    <div class='grid-item' id="languages">
+      <h1>Languages I Code In:</h1>
+      <p>1: Python<br>2: Java<br>3: C/C++<br>4: HTML/CSS/JS<br>5: Swift<br><br>*I have tutored in Java, Python, and HTML/CSS.</p>
     </div>
     <div class='grid-item' id="css-projects">
-      <h1>CSS Projects</h1>
+      <h1>My Projects</h1>
       <p>1: Mood Board<br>2: Gradient Text<br>3: Progress Bar<br>4: Playlist</p>
     </div>
-    <div class='grid-item' id="see-my">
-      <h1>See My:</h1>
+    
+    <div class='grid-item' id="Contact">
+      <h1>Contact:</h1>
       <p>Github<br>Codepen</p>
     </div>
   </div>

@@ -1,5 +1,5 @@
 # CSS Portfolio
-This is a website about myself that is made with HTML/CSS.
+UAV's Buisness Entrance Assignment 22-23'
+Web Dev
 
-# See Website
-https://alice-8.github.io/css-portfolio/ 
+
